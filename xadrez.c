@@ -17,21 +17,38 @@ int main() {
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
-    int i, contagem; // Declaração das variáveis. Acrescentei uma contagem para facilitar a vizualização do usuário.
+    int i; // Declaração das variáveis.
 
-    contagem = 1; // Declarei que essa contagem vai, inicialmente, ser igual a 1.
-
+ 
     printf("- - - Movimentacao da rainha - - -\n\n"); // Facilitar a vizualização do usuário.
 
         for (i = 1; i <= 8; i++) // Iniciei o "i" valendo 1 para o valor da variável aumentar concomitantemente com a movimentação da rainha.
         {
-            printf("%d - Esquerda\n",contagem);
-            contagem++;
+            printf("%d Esquerda\n",i); // Mostrei a movimentação para o usuário.
+        
             
         }
     
+    printf("\n\n- - - Movimentacao da torre - - -\n\n"); // Facilitar a vizualização do usuário.
+    
+        i = 1; // "i" Volta a valer 1
+        while (i <= 5)
+        {
+            printf("%d Direita\n",i);
+            i++;
+        }
+        
+    printf("\n\n- - - Movimentacao do bispo - - -\n\n");
 
+        i = 1; // "i" Volta a valer 1.
+        do
+        {
+            printf("%d Direita\n",i);
+            printf("%d Cima\n",i);
+            i++;
 
+        } while (i <= 5);
+        
 
 
 
@@ -43,6 +60,24 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+    printf("\n\n- - - Movimentacao do cavalo - - -\n\n");
+
+        for ( i = 1; i <= 1; i++)
+        {
+            int j;
+            j = 1;
+            do
+            {
+                printf("cima\n");
+                j++;
+            } while (j <= 2);
+            printf("Direita\n\n");
+        
+        }
+        
+
+
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
